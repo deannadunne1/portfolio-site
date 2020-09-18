@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 //import cover from './cover.jpeg'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
+import AboutMe from './AboutMe'
 
 const Welcome = styled.div`
   margin-top: 45vh;
@@ -16,12 +17,12 @@ const Welcome = styled.div`
 
 const Title = styled.h1`
   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lustria&family=Maitree&display=swap');
-
+  font-size: 3rem;
   font-family: ${({ theme }) => theme.title};
 `
 const Header = styled.h3`
   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lustria&family=Maitree&display=swap');
-
+  font-size: 1.5rem;
   font-family: ${({ theme }) => theme.header};
 `
 const Body = styled.p`
@@ -37,7 +38,7 @@ const Cover = styled.img`
 export default function Home() {
   return (
     <div>
-      <Parallax pages={2} scrolling={true}>
+      <Parallax pages={3} scrolling={true}>
         <ParallaxLayer offset={0} speed={2}>
           <Cover src="https://i.imgur.com/FByO1wy.jpg" />
         </ParallaxLayer>
@@ -52,6 +53,9 @@ export default function Home() {
               nonprofit focused on the electronic music industry and community.
             </Body>
           </Welcome>
+        </ParallaxLayer>
+        <ParallaxLayer id="aboutMe" offset={1} speed={0.5}>
+          <AboutMe Title={Title} Header={Header} Body={Body} />
         </ParallaxLayer>
       </Parallax>
     </div>

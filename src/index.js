@@ -4,17 +4,17 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App'
 import { ThemeProvider } from 'styled-components'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import theme from './theme'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
   // <React.StrictMode>
-  <BrowserRouter>
+  <Router>
     <ThemeProvider theme={theme}>
       <App />
     </ThemeProvider>
-  </BrowserRouter>,
+  </Router>,
   // </React.StrictMode>,
   document.getElementById('root')
 )

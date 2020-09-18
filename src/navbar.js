@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Nav from 'react-bootstrap/Nav'
-//import { Link } from 'react-router-dom'
+import Resume from './Resume.pdf'
 
 const StyledNav = styled(Navbar)``
 
@@ -14,9 +14,15 @@ export default function Navigation() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/home">About Me</Nav.Link>
-          <Nav.Link href="/link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <Nav.Link href="#aboutMe">About Me</Nav.Link>
+          <Nav.Link href="#selectWorks">Select Works</Nav.Link>
+          <Nav.Link href="#beyonddope">Beyond Dope</Nav.Link>
+          <Nav.Link href="#education">Teaching</Nav.Link>
+          <Nav.Link href={Resume} target="_blank">
+            Resume
+          </Nav.Link>
+          <Nav.Link href="#Contact">Contact</Nav.Link>
+          <NavDropdown title="Selected Works" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
               Another action
