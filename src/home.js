@@ -3,11 +3,11 @@ import styled from 'styled-components'
 //import cover from './cover.jpeg'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 import AboutMe from './AboutMe'
+import SelectWorks from './SelectWorks'
 
 const Welcome = styled.div`
   margin-top: 45vh;
   color: white;
-  heigh: 100vh;
   text-align: left;
   margin-right: 50vw;
   margin-left: 5vw;
@@ -54,8 +54,11 @@ export default function Home() {
             </Body>
           </Welcome>
         </ParallaxLayer>
-        <ParallaxLayer id="aboutMe" offset={1} speed={0.5}>
+        <ParallaxLayer id="aboutMe" offset={1} speed={2}>
           <AboutMe Title={Title} Header={Header} Body={Body} />
+        </ParallaxLayer>
+        <ParallaxLayer id="selectWorks" offset={2} speed={2}>
+          <SelectWorks Title={Title} Header={Header} Body={Body} />
         </ParallaxLayer>
       </Parallax>
     </div>

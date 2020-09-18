@@ -9,44 +9,44 @@ const Card = styled(Col)`
   box-shadow: 5px 5px 10px;
   margin: 20px;
   padding: 15px;
-  background-color: ${({ theme }) => theme.white};
+  background-color: ${({ theme }) => theme.gray};
 `
 
-const StyledAbout = styled.div`
+const StyledWorks = styled.div`
   padding-left: 10vw;
   padding-right: 10vw;
   background-image: linear-gradient(
     to bottom right,
-    ${({ theme }) => theme.tan},
-    ${({ theme }) => theme.gray}
+    ${({ theme }) => theme.white},
+    ${({ theme }) => theme.rose}
   );
   height: 100vh;
   padding-top: 20vh;
 `
 
-export default function AboutMe(props) {
+export default function SelectWorks(props) {
   const { Title, Header, Body } = props
   return (
-    <StyledAbout>
+    <StyledWorks>
       <Container fluid>
         <Row>
           <Card>
-            <Header>Education</Header>
+            <Header>DJ Party</Header>
             <hr />
-            <Body>Full Stack, Johns Hopkins, Binghamton</Body>
+            <Body>About Tech Stack Github Link</Body>
           </Card>
           <Card>
-            <Header>Career Pathway</Header>
+            <Header>Emo Rocks</Header>
             <hr />
-            <Body>7 years teaching, Upperline Code, Beyond Dope</Body>
+            <Body>About Tech Stack Github Link</Body>
           </Card>
           <Card>
-            <Header>Affiliations</Header>
+            <Header>This Website</Header>
             <hr />
-            <Body>MFA, TFA, Nap Girls, Grace Hopper</Body>
+            <Body>About Tech Stack Github Link</Body>
           </Card>
         </Row>
       </Container>
-    </StyledAbout>
+    </StyledWorks>
   )
 }
