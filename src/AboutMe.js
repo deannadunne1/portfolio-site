@@ -10,6 +10,7 @@ const Card = styled(Col)`
   margin: 20px;
   padding: 15px;
   background-color: ${({ theme }) => theme.white};
+  text-align: justify;
 `
 
 const StyledAbout = styled.div`
