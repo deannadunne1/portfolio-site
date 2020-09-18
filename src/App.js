@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Routes from './routes'
+import Navigation from './navbar'
+import './App.css'
+import styled from 'styled-components'
+
+import { createGlobalStyle } from 'styled-components'
+
+const AppWrapper = styled.div`
+  text-align: center;
+`
+
+const GlobalStyle = createGlobalStyle`
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lustria&family=Maitree&display=swap');
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: Maitree, serif;
+    text-align: center;
+  },
+
+  h1 {
+    padding: 0;
+    margin: 0;
+    font-family: Josefin Sans, serif;
+    text-align: center;
+  },
+
+  h3 {
+    padding: 0;
+    margin: 0;
+    font-family: Lustria, serif;
+    text-align: center;
+  }
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppWrapper>
+      <GlobalStyle />
+      <Navigation />
+      <Routes />
+    </AppWrapper>
+  )
 }
 
-export default App;
+export default App
