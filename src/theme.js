@@ -8,4 +8,6 @@ export default {
   gray: 'rgb(149, 145, 147)',
   white: 'rgb(246, 247, 249)',
   rose: 'rgb(192, 120, 135)',
+  ltGrn: 'rgb(121, 161, 114)',
+  dkGrn: 'rgb(20, 54, 42)',
 }

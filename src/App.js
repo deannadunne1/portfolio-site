@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: Maitree, serif;
     text-align: center;
+    background: linear-gradient(${({ theme }) => theme.dkGrn}, ${({ theme }) =>
+  theme.rose}) no-repeat center fixed;
+    background-size: cover;
+
   },
 
   h1 {

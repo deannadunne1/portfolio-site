@@ -9,16 +9,12 @@ const Card = styled(Col)`
   box-shadow: 5px 5px 10px;
   margin: 20px;
   padding: 15px;
-  background-color: ${({ theme }) => theme.gray};
+  background-color: ${({ theme }) => theme.white};
 `
 
 const StyledWorks = styled.div`
   padding-left: 10vw;
   padding-right: 10vw;
-  background-image: linear-gradient(
-    to bottom right,
-    ${({ theme }) => theme.white},
-    ${({ theme }) => theme.rose}
   );
   height: 100vh;
   padding-top: 20vh;
