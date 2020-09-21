@@ -8,7 +8,7 @@ const Footer = styled.div`
   background-color: ${({ theme }) => theme.tan};
   position: absolute;
   width: 100vw;
-  margin-top: 95vh;
+  margin-top: 98vh;
   padding: 15px;
 `
 const ContactLink = styled.a`

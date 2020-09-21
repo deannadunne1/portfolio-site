@@ -20,6 +20,7 @@ const StyledWorks = styled.div`
   );
   height: 100vh;
   padding-top: 20vh;
+  padding-bottom: 5vh;
 `
 
 export default function SelectWorks(props) {
