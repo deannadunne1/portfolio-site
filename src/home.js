@@ -54,7 +54,7 @@ export default function Home() {
             </Body>
           </Welcome>
         </ParallaxLayer>
-        <ParallaxLayer id="aboutMe" offset={1} speed={0}>
+        <ParallaxLayer id="aboutMe" offset={1} speed={2}>
           <AboutMe Title={Title} Header={Header} Body={Body} />
         </ParallaxLayer>
         <ParallaxLayer id="selectWorks" offset={2} speed={1}>
