@@ -16,13 +16,11 @@ export default function Navigation() {
         <Nav className="mr-auto">
           <Nav.Link href="#aboutMe">About Me</Nav.Link>
           <Nav.Link href="#selectWorks">Select Works</Nav.Link>
-          <Nav.Link href="#beyonddope">Beyond Dope</Nav.Link>
-          <Nav.Link href="#education">Teaching</Nav.Link>
           <Nav.Link href={Resume} target="_blank">
             Resume
           </Nav.Link>
-          <Nav.Link href="#Contact">Contact</Nav.Link>
-          <NavDropdown title="Selected Works" id="basic-nav-dropdown">
+          <Nav.Link href="#contact">Contact</Nav.Link>
+          {/*          <NavDropdown title="Selected Works" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
               Another action
@@ -32,7 +30,7 @@ export default function Navigation() {
             <NavDropdown.Item href="#action/3.4">
               Separated link
             </NavDropdown.Item>
-          </NavDropdown>
+  </NavDropdown>*/}
         </Nav>
       </Navbar.Collapse>
     </StyledNav>

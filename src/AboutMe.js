@@ -50,7 +50,7 @@ export default function AboutMe(props) {
       <Container fluid>
         <Row>
           <Col>
-            <Title style={{ color: 'white' }}>
+            <Title>
               <ReactTypingEffect text="About Me." />
             </Title>
           </Col>
