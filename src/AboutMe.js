@@ -13,7 +13,7 @@ import ReactTypingEffect from 'react-typing-effect'
 
 const Card = styled(Col)`
   border-radius: 5px;
-  box-shadow: 5px 5px 10px;
+  box-shadow: 3px 3px 8px;
   margin: 20px;
   padding: 15px;
   background-color: ${({ theme }) => theme.white};
@@ -28,7 +28,7 @@ const StyledAbout = styled.div`
   padding-top: 20vh;
 `
 const StyledImg = styled.img`
-  width: 75vw;
+  width: 70vw;
 `
 const AffiliationImg = styled.img`
   width: 25vw;

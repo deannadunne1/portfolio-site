@@ -7,10 +7,10 @@ import SelectWorks from './SelectWorks'
 import Contact from './Contact'
 
 const Welcome = styled.div`
-  margin-top: 45vh;
+  margin-top: 25vh;
   color: white;
   text-align: left;
-  margin-right: 50vw;
+  margin-right: 55vw;
   margin-left: 5vw;
   background-color: rgba(0, 0, 0, 50%);
   padding: 1vw;
@@ -18,22 +18,23 @@ const Welcome = styled.div`
 
 const Title = styled.h1`
   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lustria&family=Maitree&display=swap');
-  font-size: 6vw;
+  font-size: 4vw;
   font-family: ${({ theme }) => theme.title};
 `
 const Header = styled.h3`
   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lustria&family=Maitree&display=swap');
-  font-size: 2.3vw;
+  font-size: 2vw;
   font-family: ${({ theme }) => theme.header};
 `
 const Body = styled.p`
   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lustria&family=Maitree&display=swap');
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   font-family: ${({ theme }) => theme.body};
 `
 
 const Cover = styled.img`
-  height: 100vh;
+  margin-top: 5vh;
+  height: 50vh;
 `
 
 export default function Home() {
@@ -57,7 +58,7 @@ export default function Home() {
               </Body>
             </Welcome>
           </ParallaxLayer>
-          <ParallaxLayer id="aboutMe" offset={1} speed={2}>
+          <ParallaxLayer id="aboutMe" offset={0.9} speed={1.5}>
             <AboutMe Title={Title} Header={Header} Body={Body} />
           </ParallaxLayer>
           <ParallaxLayer id="selectWorks" offset={2} speed={1}>
