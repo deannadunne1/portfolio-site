@@ -12,12 +12,11 @@ import {
 import ReactTypingEffect from 'react-typing-effect'
 
 const Card = styled(Col)`
-  border-radius: 5px;
-  box-shadow: 3px 3px 8px;
+  background-color: rgba(0, 0, 0, 50%);
   margin: 20px;
   padding: 15px;
-  background-color: ${({ theme }) => theme.white};
-  text-align: justify;
+  text-align: center;
+  color: white;
 `
 
 const StyledAbout = styled.div`
@@ -59,7 +58,7 @@ export default function AboutMe(props) {
           <Card>
             <Header>Career Pathway</Header>
             <hr />
-            <StyledImg src="https://i.imgur.com/rhHlaGj.gif" />
+            <StyledImg src="./careerTimeline.gif" />
           </Card>
         </Row>
         <Row>

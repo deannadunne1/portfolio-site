@@ -43,7 +43,7 @@ export default function Home() {
       <div>
         <Parallax pages={3} scrolling={true}>
           <ParallaxLayer offset={0} speed={2}>
-            <Cover src="https://i.imgur.com/Fkl5s8c.jpg" />
+            <Cover src="./coverImg.png" />
           </ParallaxLayer>
           <ParallaxLayer offset={0} speed={0.5} factor={0.2}>
             <Welcome>

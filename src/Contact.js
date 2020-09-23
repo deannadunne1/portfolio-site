@@ -5,17 +5,18 @@ import Col from 'react-bootstrap/Col'
 import styled from 'styled-components'
 
 const Footer = styled.div`
-  background-color: ${({ theme }) => theme.tan};
+  background-color: ${({ theme }) => theme.white};
   position: absolute;
   width: 100vw;
   margin-top: 98vh;
   padding: 15px;
+  border-top: 1px solid black;
 `
 const ContactLink = styled.a`
-  color: white;
+  color: black;
   text-decoration: none;
   :hover {
-    color: black;
+    color: gray;
   }
 `
 
@@ -26,9 +27,7 @@ export default function Contact(props) {
       <Container>
         <Row>
           <Col>
-            <Title style={{ fontSize: '3vw', color: 'white' }}>
-              Contact Me
-            </Title>
+            <Title style={{ fontSize: '3vw' }}>Contact Me</Title>
           </Col>
         </Row>
         <Row>
