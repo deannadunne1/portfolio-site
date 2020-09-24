@@ -6,12 +6,12 @@ import styled from 'styled-components'
 import ReactTypingEffect from 'react-typing-effect'
 
 const Card = styled(Col)`
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px;
-  margin: 20px;
-  padding: 15px;
-  background-color: ${({ theme }) => theme.white};
-  text-align: justify;
+  background-color: rgba(0, 0, 0, 60%);
+  padding: 15px 15px 5px 15px;
+  color: white;
+  margin-right: 25vw;
+  margin-left: 20vw;
+  text-align: left;
 `
 
 const StyledWorks = styled.div`
@@ -21,6 +21,14 @@ const StyledWorks = styled.div`
   height: 100vh;
   padding-top: 20vh;
   padding-bottom: 5vh;
+`
+const WorksLink = styled.a`
+  color: black;
+  text-decoration: none;
+  :hover {
+    color: ${({ theme }) => theme.lime};
+    text-decoration: none;
+  }
 `
 
 export default function SelectWorks(props) {
@@ -33,8 +41,7 @@ export default function SelectWorks(props) {
       <Container fluid>
         <Row>
           <Card>
-            <Header>DJ Party</Header>
-            <hr />
+            <Title>DJ Party</Title>
             <Body style={{ fontSize: '1.3vw' }}>
               In-browser multi-user application to collaborate on shared music
               streaming through Spotify with live chat
@@ -52,12 +59,16 @@ export default function SelectWorks(props) {
                   and Bootstrap
                 </li>
               </ul>
-              <a href="https://github.com/Capstone-A/teama">Github</a>
+              <WorksLink href="https://github.com/Capstone-A/teama">
+                Github
+              </WorksLink>
             </Body>
           </Card>
+        </Row>
+        <br />
+        <Row>
           <Card>
-            <Header>Emo Rocks</Header>
-            <hr />
+            <Title>Emo Rocks</Title>
             <Body style={{ fontSize: '1.3vw' }}>
               Fully developed e-commerce web application where a user can buy
               pet rocks and pay though stripe
@@ -76,7 +87,9 @@ export default function SelectWorks(props) {
                   Material-UI for a modern design
                 </li>
               </ul>
-              <a href="https://github.com/WeBeShoppin/emoRock">Github</a>
+              <WorksLink href="https://github.com/WeBeShoppin/emoRock">
+                Github
+              </WorksLink>
             </Body>
           </Card>
         </Row>

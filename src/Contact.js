@@ -5,18 +5,19 @@ import Col from 'react-bootstrap/Col'
 import styled from 'styled-components'
 
 const Footer = styled.div`
-  background-color: ${({ theme }) => theme.white};
+  background-color: ${({ theme }) => theme.pink};
   position: absolute;
   width: 100vw;
   margin-top: 98vh;
   padding: 15px;
-  border-top: 1px solid black;
+  border-top: 3px solid black;
 `
 const ContactLink = styled.a`
   color: black;
   text-decoration: none;
   :hover {
-    color: gray;
+    color: ${({ theme }) => theme.lime};
+    text-decoration: none;
   }
 `
 
@@ -31,7 +32,11 @@ export default function Contact(props) {
           </Col>
         </Row>
         <Row>
-          <Col>deanna.dunne@gmail.com</Col>
+          <Col>
+            <ContactLink href="mailto:deanna.dunne@gmail.com">
+              deanna.dunne@gmail.com
+            </ContactLink>
+          </Col>
         </Row>
         <Row>
           <Col>
@@ -42,6 +47,11 @@ export default function Contact(props) {
             <ContactLink href="https://www.linkedin.com/in/deanna-dunne/">
               LINKEDIN
             </ContactLink>
+          </Col>
+        </Row>
+        <Row>
+          <Col style={{ fontSize: '8px' }}>
+            Copyright © 2020 deannadunne.com - All Rights Reserved.
           </Col>
         </Row>
       </Container>

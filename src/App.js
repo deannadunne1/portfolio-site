@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: Maitree, serif;
     text-align: center;
-    background: ${({ theme }) => theme.white};
+    background-image: url('./background.png');
     background-size: cover;
 
   },
