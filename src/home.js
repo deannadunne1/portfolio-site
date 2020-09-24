@@ -38,7 +38,7 @@ const Cover = styled.img`
 const PhotoDiv = styled.div`
   border: 5px solid black;
   width: 50vw;
-  margin: 5vh 70vh;
+  margin: 5vw 40vw;
 `
 
 export default function Home() {
