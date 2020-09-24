@@ -70,7 +70,7 @@ export default function Home() {
           <ParallaxLayer id="affiliations" offset={1} speed={1.2}>
             <Affiliations Title={Title} Header={Header} Body={Body} />
           </ParallaxLayer>
-          <ParallaxLayer id="selectWorks" offset={1.9} speed={1.5}>
+          <ParallaxLayer id="selectWorks" offset={1.9} speed={0.5}>
             <SelectWorks Title={Title} Header={Header} Body={Body} />
           </ParallaxLayer>
         </Parallax>

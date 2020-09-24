@@ -9,14 +9,12 @@ const Card = styled(Col)`
   background-color: rgba(0, 0, 0, 60%);
   padding: 15px 15px 5px 15px;
   color: white;
-  margin-right: 25vw;
-  margin-left: 20vw;
+  margin-left: 15vw;
   text-align: left;
 `
 
 const StyledWorks = styled.div`
   padding-left: 10vw;
-  padding-right: 10vw;
   );
   height: 100vh;
   padding-top: 20vh;
@@ -64,6 +62,16 @@ export default function SelectWorks(props) {
               </WorksLink>
             </Body>
           </Card>
+          <Col>
+            <iframe
+              title="djParty"
+              width="400"
+              height="225"
+              src="https://www.youtube.com/embed/2Bzil_3jUvM"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </Col>
         </Row>
         <br />
         <Row>
@@ -92,6 +100,14 @@ export default function SelectWorks(props) {
               </WorksLink>
             </Body>
           </Card>
+          <Col>
+            <img
+              width="400"
+              height="225"
+              src="./media/emorocks.png"
+              alt="default.jpg"
+            />
+          </Col>
         </Row>
       </Container>
     </StyledWorks>
