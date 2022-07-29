@@ -1,6 +1,6 @@
 {
   "name": "portfolio-site",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -16,12 +16,14 @@
     "react-scripts": "3.4.3",
     "react-spring": "^8.0.27",
     "react-typing-effect": "^2.0.3",
+    "sass": "^1.54.0",
     "schema-utils": "^2.7.1",
     "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:sass": "sass --watch sass/main.scss css/style.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

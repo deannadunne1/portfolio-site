@@ -1,0 +1,36 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Mobile
+600px - 900px:  Tablet
+900px - 1200px: Small Desktop
+1800px + :      Large desktop
+
+$breakpoint argument choices:
+- mob
+- tab
+- sdt
+- ldt
+
+Order: base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == mob {
+        @media (max-width: 37.5em) { @content };
+    }
+
+    @if $breakpoint == tab {
+        @media (max-width: 56.25em) { @content };
+    }
+
+    @if $breakpoint == sdt {
+        @media (max-width: 75em) { @content };
+    }
+
+    @if $breakpoint == ldt {
+        @media (min-width: 112.5em) { @content };
+    }
+
+}
